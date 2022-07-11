@@ -1,0 +1,68 @@
+﻿###############################################################################
+##                                                                           ##
+##  IMPORTANT NOTE: All accuracies must be reported with two decimal places  ##
+##  in the range of [0.00, 1.00], e.g. 0.78 and not 78, 78.00, 78%, etc.     ##
+##                                                                           ##
+###############################################################################
+
+**********************************************
+Q 3.1
+
+Linear Regression - Training Accuracy: 0.64
+Linear Regression - Testing Accuracy: 0.64
+
+Random Forest - Training Accuracy: 1.00
+Random Forest - Testing Accuracy: 0.90
+
+SVM - Training Accuracy: 0.71
+SVM - Testing Accuracy: 0.71
+
+**********************************************
+
+Q 3.2 Hyperparameter Tuning
+
+Random Forest - n_estimators values tested (at least 3): 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+Random Forest - max_depth values tested (at least 3): 20,30,50
+
+Random Forest - Best combination of parameter values - n_estimators: 13
+Random Forest - Best combination of parameter values - max_depth: 50
+
+Random Forest - Testing Accuracy before tuning (default parameters): 0.90
+Random Forest - Testing Accuracy after tuning: 0.91
+
+SVM - Kernel Values tested: 'linear', 'rbf'
+SVM - C values tested (at Least 3): 0.01, 1, 100
+SVM - Best combination of parameter values - Kernel: 'rbf'
+SVM - Best combination of parameter values - C: 100
+
+*********************************************
+
+Q 3.3
+
+SVM - Highest mean testing/cross-validated accuracy (best score): 0.82
+SVM - Mean train score: 0.83
+SVM Mean fit time: 7.80
+
+*********************************************
+
+Q 3.4 Feature Importance - WITH THE MODEL TRAINED IN Q 3.1
+
+Random Forest  - Most important feature (e.g. X5): X7
+Random Forest  - Least important feature (e.g. X1): X9
+
+*********************************************
+
+Q 3.5
+
+Best Classifier and why (in at most 50 words): 
+
+The random forest classifier is best, as it performs much better on the test set than the regression and the SVM models. It also took much less time to train and find the best parameters than SVM.
+
+*********************************************
+
+Q 3.6 Principal Component Analysis
+
+"PCA - Percentage of variance explained by each of the selected components (enter the entire array as [0.12, …, 0.012])": [0.51, 0.38, 0.12, 0., 0., 0., 0., 0., 0., 0.] 
+"PCA - Singular values corresponding to each of the selected components (enter the entire array as [0.09, …, 0.037])": [886690.55021511, 765870.22149031, 428019.7135883, 8460.03827621, 5477.2458465, 4180.81523164, 3249.68937137, 1714.82156063, 1548.48148676, 1132.55981354]
+
+*********************************************
